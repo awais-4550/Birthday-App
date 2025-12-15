@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <title>Happy Birthday</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="loader">
+                <button id="play">Start</button>
+            </div>
+        </div>
+    </div>
+    <audio class="song" loop>
+        <source src="music.mp3">
+        </source>
+        Your browser isn't invited for super fun audio time.
+    </audio>
+    <audio class="song2" loop>
+        <source src="music2.mp3">
+        </source>
+    </audio>
+    <canvas id="confetti"></canvas>
+    <div class="main">
+        <div class="container pt-5">
+            <div class="row">
+
+                <div class="col-12 col-xl-8 mx-auto text-center decoration-header">
+                    <h1 class="austen-title">Dearest Love</h1>
+                    <div class="vintage-divider">
+                        <span>❧</span> <span>❦</span> <span>❧</span>
+                    </div>
+                </div>
+
+                <div class="col-12  text-center">
+                    <div id="name" class="area"> <i class="austen-title">Mano</i></div>
+                </div>
+
+                <div class="col-12 text-center">
+                    <div class="type-wrap">
+                        <div id="typed-strings" class="typing">
+                            <h2>Many Happy Returns, <i id="nae">Mano</i></h2>
+                            <h2>May your day be filled with felicity</h2>
+                            <h2>And your heart with simple joys.</h2>
+                        </div>
+                        <span id="typed" style="white-space:pre;"></span>
+                    </div>
+                </div>
+
+                <div class="col-12 mx-auto text-center cake">
+                    <img src="img/cake.gif" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <button id="next-screen-btn" class="hidden">Make a Wish & Blow the Candles 🎂</button>
+
+    <div id="final-screen" class="hidden">
+        <div class="quote-container">
+            <div id="quote-box">
+                <p id="quote-text">"There is no charm equal to tenderness of heart."</p>
+                <p id="quote-author">- Jane Austen</p>
+            </div>
+        </div>
+
+        <div class="music-player-container">
+            <div class="vinyl-player">
+                <div class="vinyl-record">
+                    <div class="vinyl-label">TS</div>
+                </div>
+                <div class="tone-arm"></div>
+            </div>
+            <div class="now-playing">
+                <p>Now Playing: <span id="song-title">Enchanted</span></p>
+                <p>Taylor Swift</p>
+            </div>
+            <button id="letter-btn" class="vintage-btn">Read My Letter ✉️</button>
+        </div>
+    </div>
+
+    <!-- Heart Animation Screen -->
+    <canvas id="heart-canvas" class="hidden"></canvas>
+
+    <!-- Custom Message Screen -->
+    <div id="message-screen" class="hidden">
+        <div class="vintage-letter">
+            <h2 class="letter-heading">My Dearest Love,</h2>
+            <div class="letter-body">
+                <p>Words fail to express the depth of my affection...</p>
+                <p>[Your custom beautiful message goes here. Pour your heart out on this vintage paper.]</p>
+                <p>Forever Yours,</p>
+            </div>
+            <div class="signature">Mano</div>
+        </div>
+    </div>
+
+
+</body>
+<script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>
