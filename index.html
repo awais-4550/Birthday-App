@@ -94,13 +94,134 @@
     <!-- Custom Message Screen -->
     <div id="message-screen" class="hidden">
         <div class="vintage-letter">
-            <h2 class="letter-heading">My Dearest Love,</h2>
+            <h2 class="letter-heading">My Love Mano,</h2>
             <div class="letter-body">
-                <p>Words fail to express the depth of my affection...</p>
-                <p>[Your custom beautiful message goes here. Pour your heart out on this vintage paper.]</p>
-                <p>Forever Yours,</p>
+                <p>I know I haven’t always been the perfect or ideal person. There were moments when I hurt you, times
+                    when my words or actions made you cry, and I’m truly sorry for that. It breaks my heart to know I
+                    caused you pain, especially when all you’ve ever given me is love. Thank you for staying, for
+                    standing by me after everything, and for choosing us even when it wasn’t easy.</p>
+                <p>I admire you more than you know, for your kindness, your strength, and the way you love so purely.
+                    You are the cutest, most beautiful, and genuinely perfect human being. Having you in my life is
+                    something I will never take for granted.</p>
+                <p>On your birthday, I wish you the best years ahead, years where you receive everything you dream of
+                    and so much more than you deserve. May life be gentle with you, may happiness find you easily, and
+                    may all your efforts come back to you multiplied.</p>
+                <p>Happy Birthday, my favorite person. Thank you for being you, and for being mine. I love you, always.
+                </p>
+                <p>Forever yours,</p>
             </div>
-            <div class="signature">Mano</div>
+            <div class="signature">Awais</div>
+            <button id="quiz-btn" class="vintage-btn" style="margin-top: 20px; align-self: center;">Take the Quiz
+                📝</button>
+        </div>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" class="hidden">
+        <div class="quiz-container">
+            <h1 class="austen-title">A Little Lovers' Quiz</h1>
+            <div class="vintage-divider"><span>❧</span> <span>❦</span> <span>❧</span></div>
+            <form id="lovers-quiz">
+                <div class="question-box">
+                    <p class="question-text">1. What is my favorite thing about you?</p>
+                    <label><input type="radio" name="q1" value="a"> Your smile</label>
+                    <label><input type="radio" name="q1" value="b"> Your brain</label>
+                    <label><input type="radio" name="q1" value="c"> Your laugh</label>
+                    <label><input type="radio" name="q1" value="d"> Trick question — all of the above</label>
+                </div>
+
+                <div class="question-box">
+                    <p class="question-text">2. What do I do when I miss you?</p>
+                    <label><input type="radio" name="q2" value="a"> Act normal (lies)</label>
+                    <label><input type="radio" name="q2" value="b"> Re-read our chats</label>
+                    <label><input type="radio" name="q2" value="c"> Stare dramatically into nothing</label>
+                    <label><input type="radio" name="q2" value="d"> All of the above, with extra drama</label>
+                </div>
+
+                <div class="question-box">
+                    <p class="question-text">3. Who said “I love you” first?</p>
+                    <label><input type="radio" name="q3" value="a"> Me</label>
+                    <label><input type="radio" name="q3" value="b"> You</label>
+                    <label><input type="radio" name="q3" value="c"> We both did at the same time (rom-com
+                        moment)</label>
+                    <label><input type="radio" name="q3" value="d"> We were thinking it loudly</label>
+                </div>
+
+                <div class="question-box">
+                    <p class="question-text">4. What is my biggest weakness?</p>
+                    <label><input type="radio" name="q4" value="a"> Your eyes</label>
+                    <label><input type="radio" name="q4" value="b"> Your voice</label>
+                    <label><input type="radio" name="q4" value="c"> Your “just five more minutes”</label>
+                    <label><input type="radio" name="q4" value="d"> You. Literally you.</label>
+                </div>
+
+                <div class="question-box">
+                    <p class="question-text">5. Our ideal date is…</p>
+                    <label><input type="radio" name="q5" value="a"> Fancy dinner</label>
+                    <label><input type="radio" name="q5" value="b"> Netflix and snacks</label>
+                    <label><input type="radio" name="q5" value="c"> Getting lost together</label>
+                    <label><input type="radio" name="q5" value="d"> Anywhere, as long as it’s with you</label>
+                </div>
+
+                <div class="question-box">
+                    <p class="question-text">6. What’s my role in your life?</p>
+                    <label><input type="radio" name="q6" value="a"> Boyfriend</label>
+                    <label><input type="radio" name="q6" value="b"> Best friend</label>
+                    <label><input type="radio" name="q6" value="c"> Professional mood-booster</label>
+                    <label><input type="radio" name="q6" value="d"> All of the above, plus emergency snack
+                        provider</label>
+                </div>
+
+                <div class="question-box">
+                    <p class="question-text">7. What do I love stealing from you?</p>
+                    <label><input type="radio" name="q7" value="a"> Your hoodies</label>
+                    <label><input type="radio" name="q7" value="b"> Your food</label>
+                    <label><input type="radio" name="q7" value="c"> Your attention</label>
+                    <label><input type="radio" name="q7" value="d"> Your heart (sorry, not sorry)</label>
+                </div>
+
+                <div class="question-box">
+                    <p class="question-text">8. How do you look on your birthday today?</p>
+                    <label><input type="radio" name="q8" value="a"> Cute</label>
+                    <label><input type="radio" name="q8" value="b"> Gorgeous</label>
+                    <label><input type="radio" name="q8" value="c"> Stunning</label>
+                    <label><input type="radio" name="q8" value="d"> Unreal — how is this even legal</label>
+                </div>
+
+                <div class="question-box">
+                    <p class="question-text">9. What happens when we argue?</p>
+                    <label><input type="radio" name="q9" value="a"> We talk it out</label>
+                    <label><input type="radio" name="q9" value="b"> We laugh it off</label>
+                    <label><input type="radio" name="q9" value="c"> We forget why we were mad</label>
+                    <label><input type="radio" name="q9" value="d"> We end up closer than before</label>
+                </div>
+
+                <div class="question-box">
+                    <p class="question-text">10. Final question (most important): What do you mean to me?</p>
+                    <label><input type="radio" name="q10" value="a"> Everything</label>
+                    <label><input type="radio" name="q10" value="b"> More than words</label>
+                    <label><input type="radio" name="q10" value="c"> My favorite person</label>
+                    <label><input type="radio" name="q10" value="d"> All of the above, forever 💕</label>
+                </div>
+
+                <button type="button" id="submit-quiz-btn" class="vintage-btn">Submit Answers 💌</button>
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <!-- Closing Screen -->
+    <div id="closing-screen" class="hidden">
+        <div class="closing-content">
+            <h1 class="austen-title">My Dearest...</h1>
+            <p class="closing-text">
+                "In vain have I struggled. It will not do. My feelings will not be repressed.
+                You must allow me to tell you how ardently I admire and love you."
+            </p>
+            <p class="closing-subtext">
+                Happy Birthday, my love. You are my heart, my soul, and my greatest adventure.
+            </p>
+            <div class="vintage-divider"><span>❦</span></div>
         </div>
     </div>
 

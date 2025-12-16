@@ -1,0 +1,140 @@
+/* Quiz Screen Styles */
+#quiz-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    background-image: url('https://www.transparenttextures.com/patterns/aged-paper.png');
+    z-index: 5000;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Allow scrolling from top */
+    overflow-y: auto;
+    padding: 50px 0;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+#quiz-screen.visible {
+    opacity: 1;
+}
+
+.quiz-container {
+    width: 80%;
+    max-width: 800px;
+    /* Match vintage-letter styles */
+    background-color: #e6d6ac;
+    background-image: url('https://www.transparenttextures.com/patterns/aged-paper.png');
+    padding: 60px;
+    border-radius: 3px;
+    box-shadow:
+        inset 0 0 60px rgba(101, 67, 33, 0.5),
+        inset 0 0 20px rgba(0, 0, 0, 0.2),
+        0 0 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid #c2b280;
+    margin-bottom: 50px;
+}
+
+.question-box {
+    margin-bottom: 30px;
+    border-bottom: 1px dashed var(--rose-color);
+    padding-bottom: 20px;
+}
+
+.question-text {
+    font-family: var(--font-script);
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    font-family: var(--font-script);
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+label:hover {
+    color: var(--rose-color);
+    transform: scale(1.02);
+    /* Slight scale on hover */
+}
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--rose-color);
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+    top: 4px;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked {
+    background-color: var(--rose-color);
+    box-shadow: inset 0 0 0 3px #fff;
+}
+
+/* Closing Screen Styles */
+#closing-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--rose-color);
+    /* Deep maroon */
+    color: #fff;
+    z-index: 6000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 2s ease;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+#closing-screen.visible {
+    opacity: 1;
+}
+
+.closing-content {
+    max-width: 800px;
+    padding: 40px;
+}
+
+.closing-content .austen-title {
+    color: #ffd700;
+    /* Gold */
+    font-size: 5rem;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.closing-text {
+    font-family: var(--font-body);
+    font-size: 2rem;
+    font-style: italic;
+    line-height: 1.6;
+    margin: 40px 0;
+}
+
+.closing-subtext {
+    font-family: var(--font-header);
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #f4e4bc;
+}

@@ -147,6 +147,23 @@ $('#letter-btn').click(function () {
     });
 });
 
+$('#quiz-btn').click(function() {
+    $('#message-screen').removeClass('visible').addClass('hidden'); // Or fadeOut
+    $('#message-screen').fadeOut(500, function() {
+        $('#quiz-screen').removeClass('hidden').addClass('visible');
+    });
+});
+
+$('#submit-quiz-btn').click(function() {
+    // Optional: Check if all questions are answered?
+    // For now, just proceed for the smooth experience
+    $('#quiz-screen').removeClass('visible').fadeOut(500, function() {
+       $('#quiz-screen').addClass('hidden');
+       $('#closing-screen').removeClass('hidden').addClass('visible');
+    });
+});
+
+
 function initHeartAnimation() {
     const canvas = document.getElementById('heart-canvas');
     const ctx = canvas.getContext('2d');

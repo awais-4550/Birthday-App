@@ -1,5 +1,6 @@
 /* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@400;700&display=swap');
+@import url('css/quiz.css');
 
 :root {
     --bg-color: #f4e4bc;
@@ -472,8 +473,10 @@ img {
 }
 
 .vintage-letter {
-    width: 60%;
-    max-width: 600px;
+    width: 80%;
+    /* Increased from 60% */
+    max-width: 800px;
+    /* Increased from 600px */
     /* Rustic, yellowish-brown base */
     background-color: #e6d6ac;
     background-image: url('https://www.transparenttextures.com/patterns/aged-paper.png');
@@ -492,9 +495,15 @@ img {
     /* Slightly rounded, worn corners */
     /* Removed 3D tilt and fold lines */
     min-height: 70vh;
+    max-height: 90vh;
+    /* Prevent it from going offscreen */
     display: flex;
     flex-direction: column;
     border: 1px solid #c2b280;
+    overflow-y: hidden;
+    /* Let body handle scroll */
+    padding: 60px 20px 60px 60px;
+    /* Reduced right padding to move scrollbar right */
 }
 
 /* Wax Seal */
@@ -527,15 +536,41 @@ img {
     flex-grow: 1;
     overflow-y: auto;
     /* Scroll if text is long */
+    padding-right: 30px;
+    /* Space between text and scrollbar */
+
+    /* Scrollbar styling for aesthetic feel */
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-color) transparent;
+}
+
+/* Webkit Scrollbar */
+.letter-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.letter-body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.letter-body::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    border: 2px solid transparent;
+    background-clip: content-box;
 }
 
 .letter-body p {
-    font-family: var(--font-body);
-    font-size: 1.4rem;
-    line-height: 1.8;
+    font-family: var(--font-script);
+    /* Changed to handwriting style */
+    font-size: 1.8rem;
+    /* Increased size for readability */
+    line-height: 1.6;
     color: var(--text-color);
     margin-bottom: 20px;
     text-align: justify;
+    font-weight: bold;
+    /* Make it slightly bolder for legibility */
 }
 
 .signature {
